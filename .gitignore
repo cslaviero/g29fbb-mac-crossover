@@ -1,0 +1,26 @@
+.DS_Store
+*.swp
+*.tmp
+
+# SwiftPM / Xcode
+.build/
+.swiftpm/
+Package.resolved
+DerivedData/
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+Docs/*
+
+# Logs
+*.log
+*.cxlog
+
+# Editors
+.vscode/
+
+# Local binaries
+clients/dinput8_proxy/dinput8.dll
+clients/ffb_client/ffb_client.exe
