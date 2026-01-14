@@ -14,14 +14,14 @@ Below a particularly well written description of the project, tks to the Power o
 
 ## _How it works_
 
-1) *There this dll, `dinput8.dll` proxy, that sits next to `acs.exe` and intercepts DirectInput FFB calls. (like your buddy keeps asking "what's going on now in your game?", but also taking notes)
+1) *`dinput8.dll` proxy is placed on same folder that `acs.exe` and intercepts DirectInput FFB calls.*
 2) *When effects are set, the proxy sends UDP messages like `CONST 42` / `STOP` to the daemon.*
 3) *A macOS daemon* (🎶 'she has daemons on the inside' 🎶 )*(`g29ffb`) receives UDP and sends HID output reports to the wheel*.
 
 ## *Current status* (don't quote me)
 
 - *ConstantForce works (game FFB signal flows to the wheel).*
-- *Damper/Spring/etc are not yet mapped to force* (but we have logs, and they show it. just a matter of v.0.2, I hope)
+- *Damper/Spring/etc are not yet mapped to force* (but we have logs, and they show it. just a matter of v.0.2, Soon™️)
 - *Works in CrossOver with Assetto Corsa (tested).*
 
 ## *Requirements*
@@ -87,7 +87,7 @@ Inside the bottle:
 ffb_client.exe const 40
 ```
 
-On macOS, you should see force on the wheel with the daemon running.
+On macOS, you should see on console the daemon is running that force is being received; it may also work now on your wheel.
 
 ## Troubleshooting
 
