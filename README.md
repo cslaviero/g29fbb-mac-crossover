@@ -95,7 +95,7 @@ On macOS, you should see on console the daemon is running that force is being re
 
   - Verify `--device` and `--report-id` are correct for your wheel.
   - Try the other device index (G29 often appears twice).
-- High CPU:
+- High CPU usage:
 
   - Disable logging with `FFB_LOG=0` or throttle with `FFB_LOG_EVERY_MS=200`.
   - Lower daemon rate to 60-80 Hz.
