@@ -59,18 +59,7 @@ If needed, add a Wine override, going to Control Panel, Wine config, than on Lib
 
 ## *Launch the game with env vars*
 
-*On CrossOver, the safest way is adding `ffb_launch.bat` inside the bottle containing the following:*
-
-```
-@echo off
-set FFB_LOG=0
-set FFB_LOG_EVERY_MS=200
-set FFB_HOST=127.0.0.1
-set FFB_PORT=21999
-start "" "C:\Program Files (x86)\Steam\steamapps\common\assettocorsa\acs.exe"
-```
-
-*Run it via CrossOver's "Run Command".*
+ The best way is launching `ffb_launch.bat` from inside the bottle containing the game. You can modify environment variables in the file before running. Run it using CrossOver's "Run Command" or add a new 
 
 *Env vars:*
 
